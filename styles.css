@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Set a background color */
+}
+
+#canvas-container {
+    position: absolute;
+}
+
+#object-info-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #808080; /* Gray color for the dialog box */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+#object-info-dialog label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333; /* Dark text color */
+    font-weight: bold;
+}
+
+#object-info-dialog input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 5px;
+}
+
+#object-info-dialog button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4d2600; /* Dark golden brown button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#object-info-dialog button:hover {
+    background-color: #3b1a00; /* Darker golden brown color on hover */
+}
+
+
+#save-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 20px; /* Increase the padding for a larger size */
+    /* padding-left: 60px;
+    padding-right: 60px; */
+    background-color: #4caf50; /* Green button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px; /* Adjust the font size */
+    
+    cursor: pointer;
+}
+
+#save-button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+
+
+#object-info-dialog.hidden {
+    display: none;
+}
